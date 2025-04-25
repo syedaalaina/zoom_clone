@@ -49,12 +49,10 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
         default:
           return '';
       }
-    }
+    };
 
     useEffect(() => {
       const fetchRecordings = async () => {
-        toast({ title: 'Try again later'})
-        try {
           const callData = await Promise.all(callRecordings.map((meeting) =>
           meeting.queryRecordings()))
 
