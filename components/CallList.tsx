@@ -64,14 +64,13 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
 
           setRecordings(recordings);   
           
-        } catch (error) {
-          toast({ title: 'Try again later'})
-      }    
+        };
         
-        
-      }
+      
 
-      if(type === 'recordings') fetchRecordings();
+      if(type === 'recordings') {
+        fetchRecordings();
+      }
     }, [type, callRecordings]);
 
     const calls = getCalls();
