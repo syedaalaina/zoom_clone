@@ -8,7 +8,6 @@ import { useRouter } from 'next/navigation';
 import React, { useState, useEffect } from 'react';
 import MeetingCard from './MeetingCard';
 import Loader from './Loader';
-import { useToast } from '@/hooks/use-toast';
 
 
 const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
