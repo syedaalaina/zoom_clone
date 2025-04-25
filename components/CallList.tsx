@@ -97,7 +97,7 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
             router.push(`/meeting/${meeting.id}`)}
           link={type === 'recordings' ?  meeting.url : `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meeting.id}`}
           
-          />
+          /> 
       )): (
         <h1>{noCallsMessage}</h1>
       )}
